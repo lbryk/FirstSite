@@ -1,0 +1,50 @@
+ul {
+  margin-left: 13%;
+}
+
+ul li {
+  background-color: dodgerblue;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 10px;
+}
+
+li:hover > a {
+  color: #09c;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+li > ul {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  position: relative;
+  background-color: #eee;
+}
+
+ul > li > a {
+  border-top: 1px solid #fff;
+}
+
+ul > li:hover {
+  background-color: #ddd;
+}
+
+ul > li:hover > a {
+  color: #09c;
+}

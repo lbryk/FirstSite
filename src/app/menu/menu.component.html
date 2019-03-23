@@ -1,3 +1,14 @@
-<p>
-  menu works!
-</p>
+<ul>
+  <li *ngFor="let link of linksmenu">
+    <a href="http://zstz-radzymin.pl/{{link.link}}">{{ link.name }}</a>
+    <ul>
+        <li><a href="http://zstz-radzymin.pl/{{link.link2}}" *ngIf="link.name2 != ''">{{ link.name2 }}</a></li>
+        <li><a href="http://zstz-radzymin.pl/{{link.link3}}" *ngIf="link.name3 != ''">{{ link.name3 }}</a></li>
+
+        <!--<li><a href="#">link4</a></li>
+        <li><a href="#">link5</a></li>
+        <li><a href="#">link6</a></li>
+        -->
+      </ul>
+  </li>
+</ul>
